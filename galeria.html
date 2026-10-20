@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOHEMIAN | Photo Gallery & Community Feed</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo-container">
+            <svg class="horse-icon" viewBox="0 0 24 24">
+                <path d="M21.5,12C20.5,11.5 19,11.2 18,11.5C17,11.8 16,12.5 15,12C14,11.5 13.5,10.2 13,9C12.5,7.8 12,6.5 11,5.5C10,4.5 8.5,4 7.5,4.5C6.5,5 6,6 5.5,7C5,8 4.5,8.5 3.5,8.5C2.5,8.5 2,8 1.5,7.5L1,8.5C2,9.5 3,10 4,10C5,10 5.5,9.5 6,8.5C6.5,7.5 7,7 7.5,6.8C8,6.6 8.8,7 9.5,7.8C10.2,8.6 10.8,9.8 11.2,11C10,12 8.5,12.5 7,13C5.5,13.5 4,14 3,15C2,16 1.5,17.5 2,19L3,18.5C2.6,17.5 3,16.5 3.8,15.8C4.6,15.1 5.8,14.6 7.2,14.1C8.6,13.6 10,13.1 11.2,12.2C11.5,13.2 12,14.5 12.5,15.5C13,16.5 13.5,17.5 14,18.5C14.5,19.5 15,20.5 16,21L17,20C16.2,19.5 15.8,18.7 15.3,17.8C14.8,16.9 14.3,16 13.8,15C13.3,14 12.8,12.8 12.5,11.8C13.5,12.2 14.5,12.5 15.5,12.5C16.5,12.5 17.5,12.2 18.5,11.8C19.5,11.4 20.5,11.8 21.5,12Z"/>
+            </svg>
+            <div class="logo">BOHEMIAN <span>20s</span></div>
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" data-en="Home" data-es="Inicio" data-fr="Accueil" data-de="Startseite" data-tr="Ana Sayfa">Home</a></li>
+                <li><a href="servicios.html" data-en="Trips & Guides" data-es="Viajes y Guías" data-fr="Voyages & Guides" data-de="Reisen & Guides" data-tr="Geziler & Rehberler">Trips & Guides</a></li>
+                <li><a href="historias.html" data-en="Stories & Blog" data-es="Historias y Blog" data-fr="Histoires & Blog" data-de="Geschichten & Blog" data-tr="Hikayeler & Blog">Stories & Blog</a></li>
+                <li><a href="galeria.html" class="active" data-en="Gallery" data-es="Galería" data-fr="Galerie" data-de="Galerie" data-tr="Galeri">Gallery</a></li>
+                <li><a href="hacks.html" data-en="Hacks" data-es="Trucos" data-fr="Astuces" data-de="Tricks" data-tr="İpuçları">Hacks</a></li>
+                <li><a href="contacto.html" data-en="Contact Us" data-es="Contacto" data-fr="Contactez-nous" data-de="Kontakt" data-tr="İletişim">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div style="display: flex; align-items: center; gap: 8px;">
+            <div class="nav-profile-container" id="navProfileWrapper" style="display: none;">
+                <button id="profileAvatarBtn" class="profile-avatar-btn">🌲<span id="notifDot" class="notification-dot"></span></button>
+            </div>
+            <button id="lang-btn" class="lang-toggle">EN / ES / FR / DE / TR</button>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <h1 data-en="The Bohemian Photo Feed" data-es="Galería Fotográfica Bohemian" data-fr="Le flux photo Bohemian" data-de="Der Bohemian-Fotofeed" data-tr="Bohemian Fotoğraf Akışı">The Bohemian Photo Feed</h1>
+        <p data-en="Moments captured by people who met through this community, packed bags on a budget, and chose to explore the wild." data-es="Momentos capturados por personas que se conocieron en la comunidad." data-fr="Moments capturés par des membres de la communauté." data-de="Momente, festgehalten von Menschen, die sich durch die Community kennengelernt haben." data-tr="Bu topluluk aracılığıyla tanışan kişilerin yakaladığı anlar.">Moments captured by people who met through this community, packed bags on a budget, and chose to explore the wild.</p>
+    </section>
+
+    <!-- Upload Section -->
+    <section class="gallery-upload-section">
+        <div class="gallery-upload-content">
+            <span class="upload-icon">📸</span>
+            <h2 style="color: var(--pine-green);" data-en="Add Your Journey to the Feed" data-es="Añade tu Viaje al Feed" data-fr="Ajoutez votre voyage au fil" data-de="Füge deine Reise dem Feed hinzu" data-tr="Yolculuğunu Akışa Ekle">Add Your Journey to the Feed</h2>
+            <p data-en="Took a trip with new friends? Share a moment from your road trip or campfire." data-es="¿Hiciste un viaje con amigos? Comparte un momento de tu ruta." data-fr="Vous avez fait un voyage ? Partagez un moment." data-de="Hast du eine Reise gemacht? Teile einen Moment." data-tr="Yeni arkadaşlarla seyahat mi ettin? Bir anı paylaş.">Took a trip with new friends? Share a moment from your road trip or campfire.</p>
+            <label for="photoUpload" class="upload-button btn primary-btn" data-en="Choose Photo to Share" data-es="Elegir Foto para Compartir" data-fr="Choisir une photo" data-de="Foto zum Teilen auswählen" data-tr="Paylaşılacak Fotoğrafı Seç">Choose Photo to Share</label>
+            <input type="file" id="photoUpload" accept="image/*" style="display: none;">
+            <div id="uploadPreview"></div>
+        </div>
+    </section>
+
+    <!-- Category Filters -->
+    <div class="gallery-filters">
+        <button class="gallery-filter active" data-filter="all" data-en="All Moments" data-es="Todos los Momentos" data-fr="Tous les moments" data-de="Alle Momente" data-tr="Tüm Anlar">All Moments</button>
+        <button class="gallery-filter" data-filter="outdoors" data-en="Outdoors & Mountains" data-es="Exteriores y Montañas" data-fr="Plein air & Montagnes" data-de="Draußen & Berge" data-tr="Doğa ve Dağlar">Outdoors & Mountains</button>
+        <button class="gallery-filter" data-filter="water" data-en="Water & Lakes" data-es="Agua y Lagos" data-fr="Eau & Lacs" data-de="Wasser & Seen" data-tr="Su ve Göller">Water & Lakes</button>
+        <button class="gallery-filter" data-filter="roadtrip" data-en="Van Roadtrips" data-es="Viajes en Furgo" data-fr="Roadtrips en van" data-de="Van-Roadtrips" data-tr="Minibüs Yolculukları">Van Roadtrips</button>
+        <button class="gallery-filter" data-filter="night" data-en="Night & Stars" data-es="Noche y Estrellas" data-fr="Nuit & Étoiles" data-de="Nacht & Sterne" data-tr="Gece ve Yıldızlar">Night & Stars</button>
+        <button class="gallery-filter" data-filter="people" data-en="Crew & Bonfires" data-es="Grupo y Hogueras" data-fr="Équipe & Feux de camp" data-de="Crew & Lagerfeuer" data-tr="Ekip ve Kamp Ateşleri">Crew & Bonfires</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="container">
+        <div id="galleryGrid" class="gallery-grid"></div>
+    </div>
+
+    <!-- Lightbox Pop-up -->
+    <div id="lightbox" class="lightbox">
+        <span id="lightboxClose" class="lightbox-close">&times;</span>
+        <button id="lightboxPrev" class="lightbox-btn lightbox-prev">&#10094;</button>
+        <img id="lightboxImg" class="lightbox-img" src="" alt="Full View">
+        <div id="lightboxCaption" class="lightbox-caption"></div>
+        <div id="lightboxCounter" class="lightbox-counter"></div>
+        <button id="lightboxNext" class="lightbox-btn lightbox-next">&#10095;</button>
+    </div>
+
+    <!-- Floating UI Widgets & Modals -->
+    <button id="radioTabBtn" class="radio-tab-btn" data-en="📻 Bohemian Radio" data-es="📻 Radio Bohemian" data-fr="📻 Radio Bohemian" data-de="📻 Bohemian Radio" data-tr="📻 Bohemian Radyo">📻 Bohemian Radio</button>
+    <div id="radioDrawer" class="radio-drawer">
+        <div class="radio-header">
+            <h4 data-en="📻 Chill Campfire Radio" data-es="📻 Radio Fogata Chill" data-fr="📻 Radio Feu de Camp" data-de="📻 Lagerfeuer-Radio" data-tr="📻 Kamp Ateşi Radyosu">📻 Chill Campfire Radio</h4>
+            <button id="closeRadioBtn" class="radio-close-btn">&times;</button>
+        </div>
+        <p style="font-size: 0.8rem; color: #64748b; margin: 0 0 12px 0;" data-en="Ambient lofi & outdoor streams." data-es="Lofi ambiental y transmisiones al aire libre." data-fr="Lofi ambiant & flux en plein air." data-de="Ambient-Lofi & Outdoor-Streams." data-tr="Ortam lofi ve açık hava yayınları.">Ambient lofi & outdoor streams.</p>
+        <div class="radio-player-controls">
+            <audio id="bohemianAudio" loop><source src="https://stream.zeno.fm/f3wvbbqmdg8uv" type="audio/mpeg"></audio>
+            <button id="playRadioBtn" class="radio-play-btn" data-en="▶️ Play Chill Radio" data-es="▶️ Reproducir Radio Chill" data-fr="▶️ Écouter la radio" data-de="▶️ Radio abspielen" data-tr="▶️ Radyoyu Başlat">▶️ Play Chill Radio</button>
+        </div>
+    </div>
+    <button id="backToTopBtn" class="back-to-top-btn" title="Back to Top">↑</button>
+
+    <div id="profileDashboardModal" class="profile-dashboard-modal">
+        <div class="profile-dashboard-card">
+            <span class="close-modal" id="closeProfileModal">&times;</span>
+            <div class="profile-dashboard-header">
+                <div class="profile-large-avatar">🦅</div>
+                <div>
+                    <h3 id="profileUserEmailDisplay" style="margin: 0; color: var(--pine-green); font-size: 1.1rem;">wanderer@bohemian.com</h3>
+                    <span style="font-size: 0.8rem; color: var(--burnt-orange); font-weight: 700;" data-en="Verified Member" data-es="Miembro Verificado" data-fr="Membre vérifié" data-de="Verifiziertes Mitglied" data-tr="Onaylı Üye">Verified Member</span>
+                </div>
+            </div>
+            <div class="profile-stats-box">
+                <div><strong data-en="💬 Notifications:" data-es="💬 Notificaciones:" data-fr="💬 Notifications :" data-de="💬 Benachrichtigungen:" data-tr="💬 Bildirimler:">💬 Notifications:</strong> <span id="notifCountText" data-en="2 New replies from Host" data-es="2 Nuevas respuestas del Anfitrión" data-fr="2 Nouvelles réponses de l'hôte" data-de="2 Neue Antworten vom Host" data-tr="2 Yeni Host Yanıtı">2 New replies from Host</span></div>
+                <button type="button" id="clearNotifBtn" style="background: none; border: none; color: var(--burnt-orange); font-size: 0.8rem; font-weight: bold; cursor: pointer;" data-en="Mark Read" data-es="Marcar Leído" data-fr="Marquer lu" data-de="Als gelesen markieren" data-tr="Okundu İşaretle">Mark Read</button>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <a href="historias.html" class="profile-action-btn btn-write-blog" style="text-decoration: none;" data-en="✍️ Open Story & Blog Studio" data-es="✍️ Abrir Estudio de Historias" data-fr="✍️ Ouvrir le studio d'histoires" data-de="✍️ Geschichten-Studio öffnen" data-tr="✍️ Hikaye Stüdyosunu Aç">✍️ Open Story & Blog Studio</a>
+            </div>
+            <div class="profile-actions-list">
+                <button type="button" id="signOutBtn" class="profile-action-btn btn-sign-out" data-en="Sign Out of Account" data-es="Cerrar Sesión" data-fr="Se déconnecter" data-de="Abmelden" data-tr="Oturumu Kapat">Sign Out of Account</button>
+                <button type="button" id="deleteAccountBtn" class="profile-action-btn btn-delete-account" data-en="⚠️ Delete My Account & Data" data-es="⚠️ Eliminar mi Cuenta" data-fr="⚠️ Supprimer mon compte" data-de="⚠️ Konto löschen" data-tr="⚠️ Hesabımı Sil">⚠️ Delete My Account & Data</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="memberGateModal" class="member-gate-modal">
+        <video autoplay muted loop class="gate-video-bg"><source src="https://assets.mixkit.co/videos/preview/mixkit-friends-running-on-the-beach-at-sunset-42691-large.mp4" type="video/mp4"></video>
+        <div class="gate-content-card">
+            <span class="badge" data-en="Members Only Safe Haven" data-es="Refugio Exclusivo para Miembros" data-fr="Refuge réservé aux membres" data-de="Zufluchtsort nur für Mitglieder" data-tr="Sadece Üyelere Özel Sığınak">Members Only Safe Haven</span>
+            <h2 id="gateTitle" data-en="Welcome Back, Wanderer" data-es="Bienvenido de Nuevo, Viajero" data-fr="Bienvenue, Voyageur" data-de="Willkommen zurück, Wanderer" data-tr="Hoş Geldin, Gezgin">Welcome Back, Wanderer</h2>
+            <p id="gateSubtitle" data-en="Sign in to access your community feeds and saved hacks." data-es="Inicia sesión para acceder a tus contenidos y hacks guardados." data-fr="Connectez-vous pour accéder à vos flux." data-de="Melde dich an, um auf deine Feeds zuzugreifen." data-tr="Akışınıza ve kaydedilmiş ipuçlarınıza erişmek için giriş yapın.">Sign in to access your community feeds and saved hacks.</p>
+            <form id="memberAuthForm"></form>
+            <button type="button" id="toggleAuthModeBtn" class="auth-toggle-btn" data-en="Not a member? Sign up for an account" data-es="¿No eres miembro? Regístrate" data-fr="Pas de compte ? Inscrivez-vous" data-de="Kein Mitglied? Registrieren" data-tr="Üye değil misin? Kaydol">Not a member? Sign up for an account</button>
+        </div>
+    </div>
+
+    <footer><p data-en="&copy; 2026 BOHEMIAN Community. Made with freedom in Spain." data-es="&copy; 2026 Comunidad BOHEMIAN. Hecho con libertad en España." data-fr="&copy; 2026 Communauté BOHEMIAN. Fait avec liberté en Espagne." data-de="&copy; 2026 BOHEMIAN Community. Mit Freiheit in Spanien gemacht." data-tr="&copy; 2026 BOHEMIAN Topluluğu. İspanya'da özgürlükle üretildi.">&copy; 2026 BOHEMIAN Community. Made with freedom in Spain.</p></footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

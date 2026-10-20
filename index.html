@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOHEMIAN | Find Your Wild & Your People</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        .hero-video-bg {
+            position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%;
+            width: auto; height: auto; transform: translate(-50%, -50%); object-fit: cover; z-index: -2; opacity: 0.65;
+        }
+        .hero-overlay-dark {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(135deg, rgba(28, 49, 35, 0.5) 0%, rgba(15, 23, 42, 0.65) 100%);
+            z-index: -1;
+        }
+        .hero {
+            position: relative; overflow: hidden; min-height: 90vh;
+            display: flex; align-items: center; justify-content: center; text-align: center;
+        }
+        .hero-content { max-width: 800px; margin: 0 auto; padding: 0 20px; z-index: 1; }
+        
+        .vibe-quiz-section {
+            background: linear-gradient(135deg, #fdfaf5 0%, #eef4f0 100%);
+            padding: 80px 20px; border-top: 2px solid rgba(217, 107, 39, 0.2); border-bottom: 2px solid rgba(217, 107, 39, 0.2);
+            margin: 40px 0; text-align: center;
+        }
+        .vibe-quiz-card {
+            background: #ffffff; max-width: 650px; margin: 0 auto; padding: 40px;
+            border-radius: 24px; box-shadow: 0 20px 40px rgba(28, 49, 35, 0.12); border: 2px solid rgba(217, 107, 39, 0.3);
+        }
+        .quiz-options-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin: 25px 0; }
+        .quiz-option-btn {
+            background: #f8fafc; border: 2px solid #cbd5e1; border-radius: 14px; padding: 16px;
+            font-size: 0.95rem; font-weight: 700; color: var(--pine-green); cursor: pointer; transition: all 0.25s ease;
+        }
+        .quiz-option-btn:hover { border-color: var(--burnt-orange); background: #fff7ed; transform: translateY(-2px); }
+
+        .vibe-photo-showcase { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 50px 0; }
+        .vibe-photo-card { position: relative; border-radius: 20px; overflow: hidden; height: 350px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
+        .vibe-photo-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+        .vibe-photo-card:hover img { transform: scale(1.06); }
+        .vibe-photo-overlay {
+            position: absolute; bottom: 0; left: 0; width: 100%;
+            background: linear-gradient(to top, rgba(15,23,42,0.85), transparent); padding: 25px 20px 20px; color: #fff; text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo-container">
+            <svg class="horse-icon" viewBox="0 0 24 24">
+                <path d="M21.5,12C20.5,11.5 19,11.2 18,11.5C17,11.8 16,12.5 15,12C14,11.5 13.5,10.2 13,9C12.5,7.8 12,6.5 11,5.5C10,4.5 8.5,4 7.5,4.5C6.5,5 6,6 5.5,7C5,8 4.5,8.5 3.5,8.5C2.5,8.5 2,8 1.5,7.5L1,8.5C2,9.5 3,10 4,10C5,10 5.5,9.5 6,8.5C6.5,7.5 7,7 7.5,6.8C8,6.6 8.8,7 9.5,7.8C10.2,8.6 10.8,9.8 11.2,11C10,12 8.5,12.5 7,13C5.5,13.5 4,14 3,15C2,16 1.5,17.5 2,19L3,18.5C2.6,17.5 3,16.5 3.8,15.8C4.6,15.1 5.8,14.6 7.2,14.1C8.6,13.6 10,13.1 11.2,12.2C11.5,13.2 12,14.5 12.5,15.5C13,16.5 13.5,17.5 14,18.5C14.5,19.5 15,20.5 16,21L17,20C16.2,19.5 15.8,18.7 15.3,17.8C14.8,16.9 14.3,16 13.8,15C13.3,14 12.8,12.8 12.5,11.8C13.5,12.2 14.5,12.5 15.5,12.5C16.5,12.5 17.5,12.2 18.5,11.8C19.5,11.4 20.5,11.8 21.5,12Z"/>
+            </svg>
+            <div class="logo">BOHEMIAN <span>20s</span></div>
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active" data-en="Home" data-es="Inicio" data-fr="Accueil" data-de="Startseite" data-tr="Ana Sayfa">Home</a></li>
+                <li><a href="servicios.html" data-en="Trips & Guides" data-es="Viajes y Guías" data-fr="Voyages & Guides" data-de="Reisen & Guides" data-tr="Geziler & Rehberler">Trips & Guides</a></li>
+                <li><a href="historias.html" data-en="Stories & Blog" data-es="Historias y Blog" data-fr="Histoires & Blog" data-de="Geschichten & Blog" data-tr="Hikayeler & Blog">Stories & Blog</a></li>
+                <li><a href="galeria.html" data-en="Gallery" data-es="Galería" data-fr="Galerie" data-de="Galerie" data-tr="Galeri">Gallery</a></li>
+                <li><a href="hacks.html" data-en="Hacks" data-es="Trucos" data-fr="Astuces" data-de="Tricks" data-tr="İpuçları">Hacks</a></li>
+                <li><a href="contacto.html" data-en="Contact Us" data-es="Contacto" data-fr="Contactez-nous" data-de="Kontakt" data-tr="İletişim">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div style="display: flex; align-items: center; gap: 8px;">
+            <div class="nav-profile-container" id="navProfileWrapper" style="display: none;">
+                <button id="profileAvatarBtn" class="profile-avatar-btn">🌲<span id="notifDot" class="notification-dot"></span></button>
+            </div>
+            <button id="lang-btn" class="lang-toggle">EN / ES / FR / DE / TR</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay-dark"></div>
+        <video autoplay muted loop playsinline class="hero-video-bg">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-group-of-friends-having-fun-at-sunset-42691-large.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <span class="badge" 
+                  data-en="A Safe Haven for Free-Spirited Adventurers" 
+                  data-es="Un refugio seguro para espíritus libres" 
+                  data-fr="Un refuge pour les aventuriers libres" 
+                  data-de="Ein Zufluchtsort für Freigeister" 
+                  data-tr="Özgür Ruhlu Macercılar İçin Güvenli Sığınak">A Safe Haven for Free-Spirited Adventurers</span>
+            
+            <h1 data-en="Feel Lost? Let’s Get Lost in Nature Together." 
+                data-es="¿Te sientes perdido? Perdámonos juntos en la naturaleza." 
+                data-fr="Vous vous sentez perdu ? Perdons-nous ensemble dans la nature." 
+                data-de="Fühlst du dich verloren? Lass uns zusammen in der Natur verloren gehen." 
+                data-tr="Kaybolmuş mu hissediyorsun? Doğa içinde birlikte kaybolalım.">Feel Lost? Let’s Get Lost in Nature Together.</h1>
+            
+            <p data-en="For those who don't have that group chat yet. No corporate fluff, no expensive gear snobs. Just real 20-somethings, cold rivers, sunset bonfires, and lifelong friends." 
+               data-es="Para quienes aún no tienen grupo de chat. Solo jóvenes reales, ríos fríos, hogueras y amigos para toda la vida." 
+               data-fr="Pour ceux qui n'ont pas encore ce groupe de discussion. Juste de vrais jeunes de 20 ans, des rivières fraîches et des feux de camp." 
+               data-de="Für alle, die noch keinen Gruppenchat haben. Echte 20-Jährige, kalte Flüsse, Lagerfeuer und Freunde fürs Leben." 
+               data-tr="Henüz o grup sohbetine sahip olmayanlar için. Gerçek 20'li yaşlar, soğuk nehirler, gün batımı ateşleri ve ömür boyu sürecek arkadaşlar.">For those who don't have that group chat yet. No corporate fluff, no expensive gear snobs. Just real 20-somethings, cold rivers, sunset bonfires, and lifelong friends.</p>
+            
+            <div class="hero-buttons">
+                <a href="servicios.html" class="btn primary-btn" 
+                   data-en="Find Next Trip" data-es="Buscar Próxima Salida" data-fr="Trouver un voyage" data-de="Nächste Reise finden" data-tr="Sonraki Geziyi Bul">Find Next Trip</a>
+                <a href="galeria.html" class="btn secondary-btn" 
+                   data-en="Explore Gallery" data-es="Explorar Galería" data-fr="Explorer la galerie" data-de="Galerie erkunden" data-tr="Galeriyi Keşfet">Explore Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" style="padding: 60px 20px;">
+        <div style="text-align: center; max-width: 700px; margin: 0 auto 40px;">
+            <span class="badge" style="background-color: var(--burnt-orange); color:#fff;" data-en="THE YOUNG CREW VIBE" data-es="EL VIBE DE LA TRIBU" data-fr="L'ESPRIT JEUNE ÉQUIPE" data-de="DER JUNGE CREW-VIBE" data-tr="GENÇ EKİP RUHU">THE YOUNG CREW VIBE</span>
+            <h2 style="color: var(--pine-green); font-size: 2.2rem; margin: 15px 0 10px;" data-en="Sunsets, Alpine Ridges & Good Energy" data-es="Atardeceres, Crestas Alpinas y Buena Energía" data-fr="Couchers de soleil, crêtes alpines & bonne énergie" data-de="Sonnenuntergänge, Alpengrate & gute Energie" data-tr="Gün Batımları, Alpin Sırtları ve İyi Enerji">Sunsets, Alpine Ridges & Good Energy</h2>
+            <p style="color: #64748b; font-size: 1rem;" data-en="From Oakley shades on high mountain peaks to acoustic guitars by ocean campfires—this is how your 20s are meant to be spent." data-es="Desde gafas en cumbres hasta guitarras junto a hogueras—así es como deben vivirse los 20s." data-fr="Des lunettes en altitude aux guitares près des feux de camp — voilà comment passer vos 20 ans." data-de="Von Sonnenbrillen auf Berggipfeln bis zu Gitarren am Lagerfeuer – so verbringt man seine 20er." data-tr="Dağ zirvelerindeki gözlüklerden okyanus kenarındaki kamp ateşlerine — 20'li yaşlarınız böyle geçmeli.">From Oakley shades on high mountain peaks to acoustic guitars by ocean campfires—this is how your 20s are meant to be spent.</p>
+        </div>
+
+        <div class="vibe-photo-showcase">
+            <div class="vibe-photo-card">
+                <img src="https://images.unsplash.com/photo-1517824806704-9040b037703b?q=80&w=600" alt="Alpine Cliff Jump">
+                <div class="vibe-photo-overlay">
+                    <span style="font-size: 0.75rem; color: var(--burnt-orange); font-weight: bold;" data-en="INTERLAKEN, SWITZERLAND" data-es="INTERLAKEN, SUIZA" data-fr="INTERLAKEN, SUISSE" data-de="INTERLAKEN, SCHWEIZ" data-tr="İNTERLAKEN, İSVİÇRE">INTERLAKEN, SWITZERLAND</span>
+                    <h3 style="margin: 5px 0 0; font-size: 1.1rem;" data-en="Glacial Lake Cliff Dives" data-es="Saltos de Acantilado en Lagos Glaciares" data-fr="Sauts de falaise en lac glaciaire" data-de="Klippensprünge am Gletschersee" data-tr="Buzul Gölü Uçurum Atlayışları">Glacial Lake Cliff Dives</h3>
+                </div>
+            </div>
+            <div class="vibe-photo-card">
+                <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=600" alt="Van Life Roadtrip">
+                <div class="vibe-photo-overlay">
+                    <span style="font-size: 0.75rem; color: var(--burnt-orange); font-weight: bold;" data-en="PYRENEES BORDER" data-es="FRONTERA DE PIRINEOS" data-fr="FRONTIÈRE DES PYRÉNÉES" data-de="PYRENÄEN-GRENZE" data-tr="PİRENE SINIRI">PYRENEES BORDER</span>
+                    <h3 style="margin: 5px 0 0; font-size: 1.1rem;" data-en="Sunrise Coffee & Van Freedom" data-es="Café al Amanecer y Libertad en Furgo" data-fr="Café de l'aube & liberté en van" data-de="Sonnenaufgangs-Kaffee & Van-Freiheit" data-tr="Gün Doğumu Kahvesi ve Minibüs Özgürlüğü">Sunrise Coffee & Van Freedom</h3>
+                </div>
+            </div>
+            <div class="vibe-photo-card">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600" alt="Coastal Bonfire">
+                <div class="vibe-photo-overlay">
+                    <span style="font-size: 0.75rem; color: var(--burnt-orange); font-weight: bold;" data-en="BASQUE COAST" data-es="COSTA VASCA" data-fr="CÔTE BASQUE" data-de="BASKENKÜSTE" data-tr="BASK KİYİSİ">BASQUE COAST</span>
+                    <h3 style="margin: 5px 0 0; font-size: 1.1rem;" data-en="Acoustic Guitars & Saltwater Air" data-es="Guitarras Acústicas y Aire Marino" data-fr="Guitares acoustiques & air marin" data-de="Akustikgitarren & Salzwasserluft" data-tr="Akustik Gitarlar ve Tuzlu Hava">Acoustic Guitars & Saltwater Air</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="vibe-quiz-section">
+        <div class="vibe-quiz-card">
+            <span class="badge" style="background: var(--pine-green); color:#fff;" data-en="VIBE CHECK QUIZ" data-es="TEST DE VIBRA" data-fr="QUIZ D'AMBIANCE" data-de="VIBE-CHECK-QUIZ" data-tr="VİBE KONTROL TESTİ">VIBE CHECK QUIZ</span>
+            <h2 style="color: var(--pine-green); font-size: 1.8rem; margin: 12px 0 8px;" data-en="Where Should You Get Lost Next?" data-es="¿Dónde Deberías Perderte Próximamente?" data-fr="Où devriez-vous vous perdre ensuite ?" data-de="Wo solltest du dich als Nächstes verirren?" data-tr="Bir Sonraki Seferde Nerede Kaybolmalısın?">Where Should You Get Lost Next?</h2>
+            <p id="quizPrompt" style="color: #64748b; font-size: 0.95rem; margin-bottom: 20px;" data-en="Pick your ideal setting to discover your matching crew adventure:" data-es="Elige tu entorno ideal para descubrir tu aventura ideal:" data-fr="Choisissez votre décor idéal pour découvrir votre aventure :" data-de="Wähle deine ideale Umgebung, um dein Abenteuer zu finden:" data-tr="Mükemmel macera eşleşmeni bulmak için ideal ortamını seç:">Pick your ideal setting to discover your matching crew adventure:</p>
+            
+            <div class="quiz-options-grid" id="quizOptionsContainer">
+                <button type="button" class="quiz-option-btn" data-result="pyrenees" data-en="🌲 Alpine Lakes & Pine Forests" data-es="🌲 Lagos Alpinos y Pinares" data-fr="🌲 Lacs alpins & forêts de pins" data-de="🌲 Alpenseen & Kiefernwälder" data-tr="🌲 Alpin Gölleri ve Çam Ormanları">🌲 Alpine Lakes & Pine Forests</button>
+                <button type="button" class="quiz-option-btn" data-result="picos" data-en="⛰️ High Altitude Limestone Ridges" data-es="⛰️ Crestas Calcáreas de Altura" data-fr="⛰️ Crêtes calcaires d'altitude" data-de="⛰️ Hochalpine Kalksteingrate" data-tr="⛰️ Yüksek İrtifa Kireçtaşı Sırtları">⛰️ High Altitude Limestone Ridges</button>
+                <button type="button" class="quiz-option-btn" data-result="coast" data-en="🚐 Coastal Sea Caves & Vans" data-es="🚐 Cuevas Marinas y Furgos" data-fr="🚐 Grottes marines & vans" data-de="🚐 Küsten-Meereshöhlen & Vans" data-tr="🚐 Sahil Mağaraları ve Minibüsler">🚐 Coastal Sea Caves & Vans</button>
+                <button type="button" class="quiz-option-btn" data-result="skiing" data-en="🎿 Deep Powder Backcountry" data-es="🎿 Nieve Polvo en Backcountry" data-fr="🎿 Poudreuse en arrière-pays" data-de="🎿 Tiefschnee im Backcountry" data-tr="🎿 Derin Kar Dağ Kayağı">🎿 Deep Powder Backcountry</button>
+            </div>
+            
+            <div id="quizResultBox" style="display: none; margin-top: 20px; padding: 20px; background: #eef4f0; border-radius: 12px; border-left: 4px solid var(--burnt-orange); text-align: left;">
+                <h3 id="quizResultTitle" style="color: var(--pine-green); margin: 0 0 8px 0; font-size: 1.2rem;"></h3>
+                <p id="quizResultDesc" style="color: #4a5568; font-size: 0.9rem; margin-bottom: 15px;"></p>
+                <a href="servicios.html" class="btn primary-btn" style="padding: 8px 16px; font-size: 0.85rem;" data-en="View This Trip Now" data-es="Ver Este Viaje Ahora" data-fr="Voir ce voyage" data-de="Diese Reise ansehen" data-tr="Bu Geziyi İncele">View This Trip Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" style="padding: 40px 20px 80px; text-align: center;">
+        <div style="background: #fdfaf5; max-width: 750px; margin: 0 auto; padding: 40px; border-radius: 20px; border: 2px solid rgba(45, 90, 39, 0.2); box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+            <span class="badge" style="background-color: var(--burnt-orange); color:#fff; margin-bottom: 10px; display: inline-block;" data-en="FROM THE FOUNDER" data-es="DEL FUNDADOR" data-fr="DU FONDATEUR" data-de="VOM GRÜNDER" data-tr="KURUCUDAN">FROM THE FOUNDER</span>
+            <h3 style="color: var(--pine-green); font-size: 1.6rem; margin: 10px 0 15px;" data-en='"I refused to be trapped in the survival loop."' data-es='"Me negué a quedar atrapado en el bucle de supervivencia."' data-fr='"J\'ai refusé d\'être piégé dans la boucle de survie."' data-de='"Ich weigerte mich, im Überlebens-Kreislauf gefangen zu sein."' data-tr='"Hayatta kalma döngüsünde kapana kısılmayı reddettim."'>"I refused to be trapped in the survival loop."</h3>
+            <p style="color: #4a5568; font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;" data-en="Hi there, I'm Kisrak. I started Bohemian 20s because I believe our twenties are meant for more than just working hard to survive. Read the full story behind why we built this safe haven." data-es="Hola, soy Kisrak. Inicié Bohemian 20s porque creo que nuestros veintes son para vivir plenamente. Lee la historia completa." data-fr="Salut, je suis Kisrak. J'ai lancé Bohemian 20s car nos 20 ans méritent mieux que de simplement survivre. Lisez notre histoire." data-de="Hallo, ich bin Kisrak. Ich habe Bohemian 20s gegründet, weil unsere 20er mehr sind als nur Überleben. Lies unsere ganze Geschichte." data-tr="Merhaba, ben Kisrak. Bohemian 20s'i kurdum çünkü 20'li yaşlarımızın sadece hayatta kalmaktan ibaret olmadığını biliyorum. Hikayemizi okuyun.">Hi there, I'm Kisrak. I started Bohemian 20s because I believe our twenties are meant for more than just working hard to survive. Read the full story behind why we built this safe haven.</p>
+            <a href="contacto.html" class="btn secondary-btn" style="color: var(--pine-green); border-color: var(--pine-green);" data-en="Read Our Full Story & Contact Us" data-es="Leer Nuestra Historia y Contactar" data-fr="Lire notre histoire & contact" data-de="Unsere Geschichte lesen & Kontakt" data-tr="Hikayemizi Oku ve İletişime Geç">Read Our Full Story & Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Floating UI Widgets -->
+    <button id="radioTabBtn" class="radio-tab-btn" data-en="📻 Bohemian Radio" data-es="📻 Radio Bohemian" data-fr="📻 Radio Bohemian" data-de="📻 Bohemian Radio" data-tr="📻 Bohemian Radyo">📻 Bohemian Radio</button>
+    <div id="radioDrawer" class="radio-drawer">
+        <div class="radio-header">
+            <h4 data-en="📻 Chill Campfire Radio" data-es="📻 Radio Fogata Chill" data-fr="📻 Radio Feu de Camp" data-de="📻 Lagerfeuer-Radio" data-tr="📻 Kamp Ateşi Radyosu">📻 Chill Campfire Radio</h4>
+            <button id="closeRadioBtn" class="radio-close-btn">&times;</button>
+        </div>
+        <p style="font-size: 0.8rem; color: #64748b; margin: 0 0 12px 0;" data-en="Ambient lofi & outdoor streams." data-es="Lofi ambiental y transmisiones al aire libre." data-fr="Lofi ambiant & flux en plein air." data-de="Ambient-Lofi & Outdoor-Streams." data-tr="Ortam lofi ve açık hava yayınları.">Ambient lofi & outdoor streams.</p>
+        <div class="radio-player-controls">
+            <audio id="bohemianAudio" loop><source src="https://stream.zeno.fm/f3wvbbqmdg8uv" type="audio/mpeg"></audio>
+            <button id="playRadioBtn" class="radio-play-btn" data-en="▶️ Play Chill Radio" data-es="▶️ Reproducir Radio Chill" data-fr="▶️ Écouter la radio" data-de="▶️ Radio abspielen" data-tr="▶️ Radyoyu Başlat">▶️ Play Chill Radio</button>
+        </div>
+    </div>
+    <button id="backToTopBtn" class="back-to-top-btn" title="Back to Top">↑</button>
+
+    <div id="profileDashboardModal" class="profile-dashboard-modal">
+        <div class="profile-dashboard-card">
+            <span class="close-modal" id="closeProfileModal">&times;</span>
+            <div class="profile-dashboard-header">
+                <div class="profile-large-avatar">🦅</div>
+                <div>
+                    <h3 id="profileUserEmailDisplay" style="margin: 0; color: var(--pine-green); font-size: 1.1rem;">wanderer@bohemian.com</h3>
+                    <span style="font-size: 0.8rem; color: var(--burnt-orange); font-weight: 700;" data-en="Verified Member" data-es="Miembro Verificado" data-fr="Membre vérifié" data-de="Verifiziertes Mitglied" data-tr="Onaylı Üye">Verified Member</span>
+                </div>
+            </div>
+            <div class="profile-stats-box">
+                <div><strong data-en="💬 Notifications:" data-es="💬 Notificaciones:" data-fr="💬 Notifications :" data-de="💬 Benachrichtigungen:" data-tr="💬 Bildirimler:">💬 Notifications:</strong> <span id="notifCountText" data-en="2 New replies from Host" data-es="2 Nuevas respuestas del Anfitrión" data-fr="2 Nouvelles réponses de l'hôte" data-de="2 Neue Antworten vom Host" data-tr="2 Yeni Host Yanıtı">2 New replies from Host</span></div>
+                <button type="button" id="clearNotifBtn" style="background: none; border: none; color: var(--burnt-orange); font-size: 0.8rem; font-weight: bold; cursor: pointer;" data-en="Mark Read" data-es="Marcar Leído" data-fr="Marquer lu" data-de="Als gelesen markieren" data-tr="Okundu İşaretle">Mark Read</button>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <a href="historias.html" class="profile-action-btn btn-write-blog" style="text-decoration: none;" data-en="✍️ Open Story & Blog Studio" data-es="✍️ Abrir Estudio de Historias" data-fr="✍️ Ouvrir le studio d'histoires" data-de="✍️ Geschichten-Studio öffnen" data-tr="✍️ Hikaye Stüdyosunu Aç">✍️ Open Story & Blog Studio</a>
+            </div>
+            <div class="profile-actions-list">
+                <button type="button" id="signOutBtn" class="profile-action-btn btn-sign-out" data-en="Sign Out of Account" data-es="Cerrar Sesión" data-fr="Se déconnecter" data-de="Abmelden" data-tr="Oturumu Kapat">Sign Out of Account</button>
+                <button type="button" id="deleteAccountBtn" class="profile-action-btn btn-delete-account" data-en="⚠️ Delete My Account & Data" data-es="⚠️ Eliminar mi Cuenta" data-fr="⚠️ Supprimer mon compte" data-de="⚠️ Konto löschen" data-tr="⚠️ Hesabımı Sil">⚠️ Delete My Account & Data</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="memberGateModal" class="member-gate-modal">
+        <video autoplay muted loop playsinline class="gate-video-bg"><source src="https://assets.mixkit.co/videos/preview/mixkit-friends-running-on-the-beach-at-sunset-42691-large.mp4" type="video/mp4"></video>
+        <div class="gate-content-card">
+            <span class="badge" id="gateBadge" data-en="Members Only Safe Haven" data-es="Refugio Exclusivo para Miembros" data-fr="Refuge réservé aux membres" data-de="Zufluchtsort nur für Mitglieder" data-tr="Sadece Üyelere Özel Sığınak">Members Only Safe Haven</span>
+            <h2 id="gateTitle" data-en="Welcome Back, Wanderer" data-es="Bienvenido de Nuevo, Viajero" data-fr="Bienvenue, Voyageur" data-de="Willkommen zurück, Wanderer" data-tr="Hoş Geldin, Gezgin">Welcome Back, Wanderer</h2>
+            <p id="gateSubtitle" data-en="Sign in to access your community feeds and saved hacks." data-es="Inicia sesión para acceder a tus contenidos y hacks guardados." data-fr="Connectez-vous pour accéder à vos flux." data-de="Melde dich an, um auf deine Feeds zuzugreifen." data-tr="Akışınıza ve kaydedilmiş ipuçlarınıza erişmek için giriş yapın.">Sign in to access your community feeds and saved hacks.</p>
+            <form id="memberAuthForm"></form>
+            <button type="button" id="toggleAuthModeBtn" class="auth-toggle-btn" data-en="Not a member? Sign up for an account" data-es="¿No eres miembro? Regístrate" data-fr="Pas de compte ? Inscrivez-vous" data-de="Kein Mitglied? Registrieren" data-tr="Üye değil misin? Kaydol">Not a member? Sign up for an account</button>
+        </div>
+    </div>
+
+    <footer><p data-en="&copy; 2026 BOHEMIAN Community. Made with freedom in Spain." data-es="&copy; 2026 Comunidad BOHEMIAN. Hecho con libertad en España." data-fr="&copy; 2026 Communauté BOHEMIAN. Fait avec liberté en Espagne." data-de="&copy; 2026 BOHEMIAN Community. Mit Freiheit in Spanien gemacht." data-tr="&copy; 2026 BOHEMIAN Topluluğu. İspanya'da özgürlükle üretildi.">&copy; 2026 BOHEMIAN Community. Made with freedom in Spain.</p></footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const quizButtons = document.querySelectorAll(".quiz-option-btn");
+            const quizResultBox = document.getElementById("quizResultBox");
+            const quizResultTitle = document.getElementById("quizResultTitle");
+            const quizResultDesc = document.getElementById("quizResultDesc");
+            const quizPrompt = document.getElementById("quizPrompt");
+
+            const resultsData = {
+                pyrenees: { title: "🌲 Match: Pyrenees Glacial Lakes Expedition", desc: "You belong under deep pine canopies swimming in turquoise alpine waters and sharing stew around a border campfire." },
+                picos: { title: "⛰️ Match: Picos de Europa Sunset Ridge Trek", desc: "You crave high-altitude limestone ridges, ocean cloud views at sunset, and hot thermos coffee on the summit." },
+                coast: { title: "🚐 Match: Cantabrian Coast Van Life & Sea Caves", desc: "Your vibe is salt in your hair, secret beach bonfires, acoustic guitars, and waking up to ocean waves." },
+                skiing: { title: "🎿 Match: Alpine Backcountry Ski & Powder Line", desc: "You live for fresh powder descents, early morning uphill skinning, and crisp winter mountain air." }
+            };
+
+            quizButtons.forEach(btn => {
+                btn.addEventListener("click", function() {
+                    const type = this.getAttribute("data-result");
+                    const data = resultsData[type];
+                    if (data && quizResultBox) {
+                        quizResultTitle.textContent = data.title;
+                        quizResultDesc.textContent = data.desc;
+                        quizResultBox.style.display = "block";
+                        quizPrompt.textContent = "✨ Your perfect trip match:";
+                    }
+                });
+            });
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

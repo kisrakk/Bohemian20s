@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOHEMIAN | Trips, Equipment & Trail Guides</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo-container">
+            <svg class="horse-icon" viewBox="0 0 24 24">
+                <path d="M21.5,12C20.5,11.5 19,11.2 18,11.5C17,11.8 16,12.5 15,12C14,11.5 13.5,10.2 13,9C12.5,7.8 12,6.5 11,5.5C10,4.5 8.5,4 7.5,4.5C6.5,5 6,6 5.5,7C5,8 4.5,8.5 3.5,8.5C2.5,8.5 2,8 1.5,7.5L1,8.5C2,9.5 3,10 4,10C5,10 5.5,9.5 6,8.5C6.5,7.5 7,7 7.5,6.8C8,6.6 8.8,7 9.5,7.8C10.2,8.6 10.8,9.8 11.2,11C10,12 8.5,12.5 7,13C5.5,13.5 4,14 3,15C2,16 1.5,17.5 2,19L3,18.5C2.6,17.5 3,16.5 3.8,15.8C4.6,15.1 5.8,14.6 7.2,14.1C8.6,13.6 10,13.1 11.2,12.2C11.5,13.2 12,14.5 12.5,15.5C13,16.5 13.5,17.5 14,18.5C14.5,19.5 15,20.5 16,21L17,20C16.2,19.5 15.8,18.7 15.3,17.8C14.8,16.9 14.3,16 13.8,15C13.3,14 12.8,12.8 12.5,11.8C13.5,12.2 14.5,12.5 15.5,12.5C16.5,12.5 17.5,12.2 18.5,11.8C19.5,11.4 20.5,11.8 21.5,12Z"/>
+            </svg>
+            <div class="logo">BOHEMIAN <span>20s</span></div>
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" data-en="Home" data-es="Inicio" data-fr="Accueil" data-de="Startseite" data-tr="Ana Sayfa">Home</a></li>
+                <li><a href="servicios.html" class="active" data-en="Trips & Guides" data-es="Viajes y Guías" data-fr="Voyages & Guides" data-de="Reisen & Guides" data-tr="Geziler & Rehberler">Trips & Guides</a></li>
+                <li><a href="historias.html" data-en="Stories & Blog" data-es="Historias y Blog" data-fr="Histoires & Blog" data-de="Geschichten & Blog" data-tr="Hikayeler & Blog">Stories & Blog</a></li>
+                <li><a href="galeria.html" data-en="Gallery" data-es="Galería" data-fr="Galerie" data-de="Galerie" data-tr="Galeri">Gallery</a></li>
+                <li><a href="hacks.html" data-en="Hacks" data-es="Trucos" data-fr="Astuces" data-de="Tricks" data-tr="İpuçları">Hacks</a></li>
+                <li><a href="contacto.html" data-en="Contact Us" data-es="Contacto" data-fr="Contactez-nous" data-de="Kontakt" data-tr="İletişim">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div style="display: flex; align-items: center; gap: 8px;">
+            <div class="nav-profile-container" id="navProfileWrapper" style="display: none;">
+                <button id="profileAvatarBtn" class="profile-avatar-btn">🌲<span id="notifDot" class="notification-dot"></span></button>
+            </div>
+            <button id="lang-btn" class="lang-toggle">EN / ES / FR / DE / TR</button>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <h1 data-en="Expeditions & Equipment Guides" data-es="Expediciones y Guías de Equipo" data-fr="Expéditions & Guides d'équipement" data-de="Expeditionen & Ausrüstungsführer" data-tr="Seferler ve Ekipman Rehberleri">Expeditions & Equipment Guides</h1>
+        <p data-en="Join verified trips or explore equipment breakdowns curated by community sports experts." data-es="Únete a viajes verificados o explora guías de equipamiento." data-fr="Rejoignez des voyages vérifiés ou explorez des guides d'équipement." data-de="Nimm an verifizierten Reisen teil oder entdecke Ausrüstungs-Guides." data-tr="Onaylı gezilere katılın veya ekipman rehberlerini keşfedin.">Join verified trips or explore equipment breakdowns curated by community sports experts.</p>
+    </section>
+
+    <section class="container">
+        <h2 style="color: var(--pine-green); text-align: center; font-size: 2rem;" data-en="1. Verified Group Trips" data-es="1. Viajes en Grupo Verificados" data-fr="1. Voyages de groupe vérifiés" data-de="1. Verifizierte Gruppenreisen" data-tr="1. Onaylı Grup Gezileri">1. Verified Group Trips</h2>
+        <div class="trips-grid">
+            <div class="trip-card">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600" alt="Pyrenees" class="card-img">
+                <div class="card-body">
+                    <div class="trip-badge" data-en="Weekend Trip" data-es="Viaje de Fin de Semana" data-fr="Voyage de week-end" data-de="Wochenendausflug" data-tr="Hafta Sonu Gezisi">Weekend Trip</div>
+                    <h3 data-en="Pyrenees Lakes & Wild Camping" data-es="Lagos de Pirineos y Acampada Salvaje" data-fr="Lacs des Pyrénées & Camping Sauvage" data-de="Pyrenäen-Seen & Wildcamping" data-tr="Pirene Gölleri ve Vahşi Kamp">Pyrenees Lakes & Wild Camping</h3>
+                    <p data-en="2 Days / 1 Night. Swimming in glacial lakes, cooking outdoor stew on campfires, and stargazing near the border." data-es="2 Días / 1 Noche. Nadando en lagos glaciales, cocinando guiso en hogueras y viendo estrellas." data-fr="2 Jours / 1 Nuit. Baignade dans des lacs glaciaires et observation des étoiles." data-de="2 Tage / 1 Nacht. Schwimmen in Gletscherseen und Sternegucken." data-tr="2 Gün / 1 Gece. Buzul göllerinde yüzme ve yıldızları izleme.">2 Days / 1 Night. Swimming in glacial lakes, cooking outdoor stew on campfires, and stargazing near the border.</p>
+                    <div class="btn-container"><button type="button" class="btn primary-btn join-btn" data-trip="pyrenees" data-en="View Trip & Apply" data-es="Ver Viaje y Postularse" data-fr="Voir le voyage" data-de="Reise ansehen & Bewerben" data-tr="Geziyi İncele ve Başvur">View Trip & Apply</button></div>
+                </div>
+            </div>
+            <div class="trip-card">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600" alt="Picos" class="card-img">
+                <div class="card-body">
+                    <div class="trip-badge" data-en="Day Escape" data-es="Escapada de un Día" data-fr="Évasion d'un jour" data-de="Tagesausflug" data-tr="Günübirlik Kaçamak">Day Escape</div>
+                    <h3 data-en="Picos de Europa Sunset Ridge Trek" data-es="Senderismo al Atardecer en Picos de Europa" data-fr="Randonnée au coucher du soleil aux Picos de Europa" data-de="Sonnenuntergangs-Gratwanderung Picos de Europa" data-tr="Picos de Europa Gün Batımı Sırt Yürüyüşü">Picos de Europa Sunset Ridge Trek</h3>
+                    <p data-en="Day Hike. High ridge trail, ancient oak woods, campfire story circle, and thermos coffee on the summit." data-es="Excursión de un día. Ruta de alta cresta, bosques de robles, círculo de historias y café en la cumbre." data-fr="Randonnée d'une journée. Sentier de crête, bois de chênes et café au sommet." data-de="Tageswanderung. Gratweg, Eichenwälder und Thermoskannen-Kaffee." data-tr="Gündüz Yürüyüşü. Yüksek sırt patikası, meşe ormanları ve zirvede kahve.">Day Hike. High ridge trail, ancient oak woods, campfire story circle, and thermos coffee on the summit.</p>
+                    <div class="btn-container"><button type="button" class="btn primary-btn join-btn" data-trip="picos" data-en="View Trip & Apply" data-es="Ver Viaje y Postularse" data-fr="Voir le voyage" data-de="Reise ansehen & Bewerben" data-tr="Geziyi İncele ve Başvur">View Trip & Apply</button></div>
+                </div>
+            </div>
+            <div class="trip-card">
+                <img src="https://images.unsplash.com/photo-1516939884455-1445c8652f83?q=80&w=600" alt="Coast" class="card-img">
+                <div class="card-body">
+                    <div class="trip-badge" data-en="Roadtrip" data-es="Viaje en Carretera" data-fr="Road-trip" data-de="Roadtrip" data-tr="Yolculuk">Roadtrip</div>
+                    <h3 data-en="Northern Coast Canoeing & Bonfire" data-es="Piragüismo y Hoguera en la Costa Norte" data-fr="Canoë et feu de camp sur la côte nord" data-de="Kanu fahren & Lagerfeuer an der Nordküste" data-tr="Kuzey Sahili Kano ve Kamp Ateşi">Northern Coast Canoeing & Bonfire</h3>
+                    <p data-en="3 Days. Van life road trip across secret beaches, cliff jumping, outdoor canoeing, and beach camping." data-es="3 Días. Viaje en furgo por playas secretas, saltos de acantilados y acampada en la playa." data-fr="3 Jours. Road-trip en van à travers des plages secrètes et camping." data-de="3 Tage. Vanlife-Roadtrip über geheime Strände und Klippenspringen." data-tr="3 Gün. Gizli plajlar ve sahil kampı ile minibüs yolculuğu.">3 Days. Van life road trip across secret beaches, cliff jumping, outdoor canoeing, and beach camping.</p>
+                    <div class="btn-container"><button type="button" class="btn primary-btn join-btn" data-trip="coast" data-en="View Trip & Apply" data-es="Ver Viaje y Postularse" data-fr="Voir le voyage" data-de="Reise ansehen & Bewerben" data-tr="Geziyi İncele ve Başvur">View Trip & Apply</button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 style="color: var(--pine-green); text-align: center; font-size: 2rem;" data-en="2. Equipment & Gear Guides" data-es="2. Guías de Equipo y Material" data-fr="2. Guides d'équipement" data-de="2. Ausrüstungs-Guides" data-tr="2. Ekipman Rehberleri">2. Equipment & Gear Guides</h2>
+        <div class="gear-grid">
+            <div class="gear-card">
+                <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=600" alt="Skiing" class="card-img">
+                <div class="card-body">
+                    <div class="gear-category" data-en="Ski & Winter Sports" data-es="Esquí y Deportes de Invierno" data-fr="Ski & sports d'hiver" data-de="Ski & Wintersport" data-tr="Kayak ve Kış Sporları">Ski & Winter Sports</div>
+                    <h3 data-en="Backcountry Skiing Essentials" data-es="Esenciales de Esquí de Travesía" data-fr="L'essentiel du ski de randonnée" data-de="Wichtige Skitouren-Ausrüstung" data-tr="Dağ Kayağı Temelleri">Backcountry Skiing Essentials</h3>
+                    <p data-en="What layers, touring skis, beacons, and safety probes you need before heading into Pyrenees or Norwegian powder." data-es="Capas, esquís de travesía, balizas y sondas necesarias antes de ir a los Pirineos." data-fr="Quelles couches, skis et balises de sécurité sont nécessaires." data-de="Welche Schichten, Tourenski und Lawinensonden du benötigst." data-tr="Pirene veya Norveç karına gitmeden önce ihtiyacınız olan katmanlar ve cihazlar.">What layers, touring skis, beacons, and safety probes you need before heading into Pyrenees or Norwegian powder.</p>
+                    <div class="btn-container"><button type="button" class="btn secondary-btn join-btn" data-trip="skiing" style="color: var(--pine-green); border-color: var(--pine-green);" data-en="Inspect Gear Checklist" data-es="Inspeccionar Lista de Equipo" data-fr="Voir la liste d'équipement" data-de="Ausrüstungsliste ansehen" data-tr="Ekipman Listesini İncele">Inspect Gear Checklist</button></div>
+                </div>
+            </div>
+            <div class="gear-card">
+                <img src="https://images.unsplash.com/photo-1522163182402-834f871fd851?q=80&w=600" alt="Climbing" class="card-img">
+                <div class="card-body">
+                    <div class="gear-category" data-en="Climbing & Via Ferrata" data-es="Escalada y Vía Ferrata" data-fr="Escalade & Via Ferrata" data-de="Klettern & Klettersteig" data-tr="Tırmanış ve Via Ferrata">Climbing & Via Ferrata</div>
+                    <h3 data-en="Rock Climbing Safety Setup" data-es="Configuración de Seguridad en Escalada" data-fr="Sécurité en escalade" data-de="Sicherheits-Setup fürs Klettern" data-tr="Kaya Tırmanışı Güvenlik Kurulumu">Rock Climbing Safety Setup</h3>
+                    <p data-en="Harnesses, CE-certified helmets, energy absorbing lanyards, and liquid chalk recommendations." data-es="Arneses, cascos certificados CE, disipadores de energía y tiza líquida." data-fr="Harnais, casques certifiés CE et longes d'absorption." data-de="Gurte, CE-zertifizierte Helme und Bandfalldämpfer." data-tr="Kuşaklar, CE sertifikalı kasklar ve sıvı tebeşir önerileri.">Harnesses, CE-certified helmets, energy absorbing lanyards, and liquid chalk recommendations.</p>
+                    <div class="btn-container"><button type="button" class="btn secondary-btn join-btn" data-trip="climbing" style="color: var(--pine-green); border-color: var(--pine-green);" data-en="Inspect Gear Checklist" data-es="Inspeccionar Lista de Equipo" data-fr="Voir la liste d'équipement" data-de="Ausrüstungsliste ansehen" data-tr="Ekipman Listesini İncele">Inspect Gear Checklist</button></div>
+                </div>
+            </div>
+            <div class="gear-card">
+                <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?q=80&w=600" alt="Cycling" class="card-img">
+                <div class="card-body">
+                    <div class="gear-category" data-en="Bikepacking & Trails" data-es="Bikepacking y Rutas" data-fr="Bikepacking & sentiers" data-de="Bikepacking & Trails" data-tr="Bikepacking ve Rotalar">Bikepacking & Trails</div>
+                    <h3 data-en="Wilderness Bikepacking Setup" data-es="Configuración de Bikepacking en la Naturaleza" data-fr="Installation de bikepacking en nature" data-de="Wildnis-Bikepacking-Setup" data-tr="Vahşi Doğa Bikepacking Kurulumu">Wilderness Bikepacking Setup</h3>
+                    <p data-en="Frame bags, tubeless repair kits, compact stoves, and GPX map integration for multi-day forest gravel rides." data-es="Bolsas de cuadro, kits tubulares, cocinas compactas y mapas GPX para rutas de varios días." data-fr="Sacs de cadre, kits tubeless et intégration de cartes GPX." data-de="Rahmentaschen, Tubeless-Kits und GPX-Kartenintegration." data-tr="Kadro çantaları, tamir setleri ve çok günlük çakıl sürüşleri için GPX haritaları.">Frame bags, tubeless repair kits, compact stoves, and GPX map integration for multi-day forest gravel rides.</p>
+                    <div class="btn-container"><button type="button" class="btn secondary-btn join-btn" data-trip="cycling" style="color: var(--pine-green); border-color: var(--pine-green);" data-en="Inspect Gear Checklist" data-es="Inspeccionar Lista de Equipo" data-fr="Voir la liste d'équipement" data-de="Ausrüstungsliste ansehen" data-tr="Ekipman Listesini İncele">Inspect Gear Checklist</button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Popup Structure -->
+    <div id="tripModal" class="modal">
+        <div class="modal-content" style="max-height: 90vh; overflow-y: auto; padding: 35px; border-radius: 20px;">
+            <span class="close-modal">&times;</span>
+            <div style="text-align: center; margin-bottom: 25px;">
+                <span class="badge" data-en="Verified Community Trip" data-es="Viaje Comunitario Verificado" data-fr="Voyage communautaire vérifié" data-de="Verifizierte Gemeinschaftsreise" data-tr="Onaylı Topluluk Gezisi">Verified Community Trip</span>
+                <h2 id="modalTitle" style="color: var(--pine-green); font-size: 2rem; margin: 15px 0 10px;">Expedition Details</h2>
+                <p id="modalDescription" style="color: #4a5568; font-size: 1rem; line-height: 1.5;"></p>
+            </div>
+            <div id="modalDetails" class="modal-details" style="border-left: 4px solid var(--burnt-orange);"></div>
+            <div class="app-form-wrapper">
+                <div class="app-form-header">
+                    <h3 data-en="Apply to Join This Crew" data-es="Postúlate para Unirte a Este Grupo" data-fr="Postuler pour rejoindre ce groupe" data-de="Bewerbe dich, um dieser Crew beizutreten" data-tr="Bu Ekibe Katılmak İçin Başvur">Apply to Join This Crew</h3>
+                    <p data-en="We review applications to build warm, supportive trip groups." data-es="Revisamos solicitudes para crear grupos cálidos y unidos." data-fr="Nous examinons les candidatures pour créer des groupes soudés." data-de="Wir prüfen Bewerbungen, um unterstützende Reisegruppen aufzubauen." data-tr="Destekleyici ve sıcak gruplar oluşturmak için başvuruları inceliyoruz.">We review applications to build warm, supportive trip groups.</p>
+                </div>
+                <form id="tripApplicationForm">
+                    <input type="hidden" id="selectedTripKey" name="tripKey">
+                    <div class="input-group-row">
+                        <div class="custom-field"><label data-en="Full Name" data-es="Nombre Completo" data-fr="Nom complet" data-de="Vollständiger Name" data-tr="Ad Soyad">Full Name</label><input type="text" id="applicantName" placeholder="e.g. Alex Rivers" required></div>
+                        <div class="custom-field"><label data-en="Age" data-es="Edad" data-fr="Âge" data-de="Alter" data-tr="Yaş">Age</label><input type="number" id="applicantAge" placeholder="24" min="18" max="99" required></div>
+                    </div>
+                    <div class="custom-field"><label data-en="Where are you coming from?" data-es="¿De dónde vienes?" data-fr="D'où venez-vous ?" data-de="Woher kommst du?" data-tr="Nereden geliyorsun?">Where are you coming from?</label><input type="text" id="applicantLocation" placeholder="e.g. Barcelona, Spain" required></div>
+                    <div class="bubble-selector-container">
+                        <label data-en="Your Outdoor Experience Level" data-es="Tu Nivel de Experiencia al Aire Libre" data-fr="Votre niveau d'expérience en plein air" data-de="Dein Outdoor-Erfahrungslevel" data-tr="Açık Hava Deneyim Seviyeniz">Your Outdoor Experience Level</label>
+                        <div class="bubble-options">
+                            <label><input type="radio" name="experience" value="beginner" class="bubble-radio" checked><span class="bubble-badge" data-en="🌱 First Timer" data-es="🌱 Principiante" data-fr="🌱 Débutant" data-de="🌱 Anfänger" data-tr="🌱 İlk Kez">🌱 First Timer</span></label>
+                            <label><input type="radio" name="experience" value="intermediate" class="bubble-radio"><span class="bubble-badge" data-en="🏕️ Weekend Hiker" data-es="🏕️ Excursionista de Fin de Semana" data-fr="🏕️ Randonneur du week-end" data-de="🏕️ Wochenend-Wanderer" data-tr="🏕️ Hafta Sonu Yürüyüşçüsü">🏕️ Weekend Hiker</span></label>
+                            <label><input type="radio" name="experience" value="advanced" class="bubble-radio"><span class="bubble-badge" data-en="🏔️ Seasoned Explorer" data-es="🏔️ Explorador Experto" data-fr="🏔️ Explorateur chevronné" data-de="🏔️ Erfahrener Entdecker" data-tr="🏔️ Deneyimli Gezgin">🏔️ Seasoned Explorer</span></label>
+                        </div>
+                    </div>
+                    <div class="custom-field"><label data-en="Why do you want to join?" data-es="¿Por qué quieres unirte?" data-fr="Pourquoi voulez-vous participer ?" data-de="Warum möchtest du mitmachen?" data-tr="Neden katılmak istiyorsun?">Why do you want to join?</label><textarea id="applicantMotivation" placeholder="Tell us about your vibe..." rows="4" required></textarea></div>
+                    <button type="submit" class="btn primary-btn btn-submit-app" data-en="Submit Application" data-es="Enviar Solicitud" data-fr="Soumettre la candidature" data-de="Bewerbung absenden" data-tr="Başvuruyu Gönder">Submit Application</button>
+                </form>
+                <div id="applicationSuccessMessage" class="hidden-msg" style="text-align: center; font-size: 0.95rem; margin-top: 15px;" data-en="🎉 Application received! We will reach out shortly." data-es="🎉 ¡Solicitud recibida! Nos pondremos en contacto pronto." data-fr="🎉 Candidature reçue ! Nous vous contacterons bientôt." data-de="🎉 Bewerbung erhalten! Wir melden uns in Kürze." data-tr="🎉 Başvuru alındı! Yakında sizinle iletişime geçeceğiz.">🎉 Application received! We will reach out shortly.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating UI Widgets & Modals -->
+    <button id="radioTabBtn" class="radio-tab-btn" data-en="📻 Bohemian Radio" data-es="📻 Radio Bohemian" data-fr="📻 Radio Bohemian" data-de="📻 Bohemian Radio" data-tr="📻 Bohemian Radyo">📻 Bohemian Radio</button>
+    <div id="radioDrawer" class="radio-drawer">
+        <div class="radio-header">
+            <h4 data-en="📻 Chill Campfire Radio" data-es="📻 Radio Fogata Chill" data-fr="📻 Radio Feu de Camp" data-de="📻 Lagerfeuer-Radio" data-tr="📻 Kamp Ateşi Radyosu">📻 Chill Campfire Radio</h4>
+            <button id="closeRadioBtn" class="radio-close-btn">&times;</button>
+        </div>
+        <p style="font-size: 0.8rem; color: #64748b; margin: 0 0 12px 0;" data-en="Ambient lofi & outdoor streams." data-es="Lofi ambiental y transmisiones al aire libre." data-fr="Lofi ambiant & flux en plein air." data-de="Ambient-Lofi & Outdoor-Streams." data-tr="Ortam lofi ve açık hava yayınları.">Ambient lofi & outdoor streams.</p>
+        <div class="radio-player-controls">
+            <audio id="bohemianAudio" loop><source src="https://stream.zeno.fm/f3wvbbqmdg8uv" type="audio/mpeg"></audio>
+            <button id="playRadioBtn" class="radio-play-btn" data-en="▶️ Play Chill Radio" data-es="▶️ Reproducir Radio Chill" data-fr="▶️ Écouter la radio" data-de="▶️ Radio abspielen" data-tr="▶️ Radyoyu Başlat">▶️ Play Chill Radio</button>
+        </div>
+    </div>
+    <button id="backToTopBtn" class="back-to-top-btn" title="Back to Top">↑</button>
+
+    <div id="profileDashboardModal" class="profile-dashboard-modal">
+        <div class="profile-dashboard-card">
+            <span class="close-modal" id="closeProfileModal">&times;</span>
+            <div class="profile-dashboard-header">
+                <div class="profile-large-avatar">🦅</div>
+                <div>
+                    <h3 id="profileUserEmailDisplay" style="margin: 0; color: var(--pine-green); font-size: 1.1rem;">wanderer@bohemian.com</h3>
+                    <span style="font-size: 0.8rem; color: var(--burnt-orange); font-weight: 700;" data-en="Verified Member" data-es="Miembro Verificado" data-fr="Membre vérifié" data-de="Verifiziertes Mitglied" data-tr="Onaylı Üye">Verified Member</span>
+                </div>
+            </div>
+            <div class="profile-stats-box">
+                <div><strong data-en="💬 Notifications:" data-es="💬 Notificaciones:" data-fr="💬 Notifications :" data-de="💬 Benachrichtigungen:" data-tr="💬 Bildirimler:">💬 Notifications:</strong> <span id="notifCountText" data-en="2 New replies from Host" data-es="2 Nuevas respuestas del Anfitrión" data-fr="2 Nouvelles réponses de l'hôte" data-de="2 Neue Antworten vom Host" data-tr="2 Yeni Host Yanıtı">2 New replies from Host</span></div>
+                <button type="button" id="clearNotifBtn" style="background: none; border: none; color: var(--burnt-orange); font-size: 0.8rem; font-weight: bold; cursor: pointer;" data-en="Mark Read" data-es="Marcar Leído" data-fr="Marquer lu" data-de="Als gelesen markieren" data-tr="Okundu İşaretle">Mark Read</button>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <a href="historias.html" class="profile-action-btn btn-write-blog" style="text-decoration: none;" data-en="✍️ Open Story & Blog Studio" data-es="✍️ Abrir Estudio de Historias" data-fr="✍️ Ouvrir le studio d'histoires" data-de="✍️ Geschichten-Studio öffnen" data-tr="✍️ Hikaye Stüdyosunu Aç">✍️ Open Story & Blog Studio</a>
+            </div>
+            <div class="profile-actions-list">
+                <button type="button" id="signOutBtn" class="profile-action-btn btn-sign-out" data-en="Sign Out of Account" data-es="Cerrar Sesión" data-fr="Se déconnecter" data-de="Abmelden" data-tr="Oturumu Kapat">Sign Out of Account</button>
+                <button type="button" id="deleteAccountBtn" class="profile-action-btn btn-delete-account" data-en="⚠️ Delete My Account & Data" data-es="⚠️ Eliminar mi Cuenta" data-fr="⚠️ Supprimer mon compte" data-de="⚠️ Konto löschen" data-tr="⚠️ Hesabımı Sil">⚠️ Delete My Account & Data</button>
+            </div>
+        </div>
+    </div>
+
+    <footer><p data-en="&copy; 2026 BOHEMIAN Community. Made with freedom in Spain." data-es="&copy; 2026 Comunidad BOHEMIAN. Hecho con libertad en España." data-fr="&copy; 2026 Communauté BOHEMIAN. Fait avec liberté en Espagne." data-de="&copy; 2026 BOHEMIAN Community. Mit Freiheit in Spanien gemacht." data-tr="&copy; 2026 BOHEMIAN Topluluğu. İspanya'da özgürlükle üretildi.">&copy; 2026 BOHEMIAN Community. Made with freedom in Spain.</p></footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

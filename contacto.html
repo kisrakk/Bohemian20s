@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOHEMIAN | Contact Us & Our Story</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        .founder-story-container {
+            background: #fdfaf5;
+            border-radius: 24px;
+            padding: 45px;
+            margin-bottom: 50px;
+            box-shadow: 0 15px 35px rgba(28, 49, 35, 0.1);
+            border: 2px solid rgba(217, 107, 39, 0.25);
+        }
+        .founder-story-container h2 {
+            color: var(--pine-green);
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .founder-story-container p {
+            color: #4a5568;
+            font-size: 1.02rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        .founder-signature {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--burnt-orange);
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo-container">
+            <svg class="horse-icon" viewBox="0 0 24 24">
+                <path d="M21.5,12C20.5,11.5 19,11.2 18,11.5C17,11.8 16,12.5 15,12C14,11.5 13.5,10.2 13,9C12.5,7.8 12,6.5 11,5.5C10,4.5 8.5,4 7.5,4.5C6.5,5 6,6 5.5,7C5,8 4.5,8.5 3.5,8.5C2.5,8.5 2,8 1.5,7.5L1,8.5C2,9.5 3,10 4,10C5,10 5.5,9.5 6,8.5C6.5,7.5 7,7 7.5,6.8C8,6.6 8.8,7 9.5,7.8C10.2,8.6 10.8,9.8 11.2,11C10,12 8.5,12.5 7,13C5.5,13.5 4,14 3,15C2,16 1.5,17.5 2,19L3,18.5C2.6,17.5 3,16.5 3.8,15.8C4.6,15.1 5.8,14.6 7.2,14.1C8.6,13.6 10,13.1 11.2,12.2C11.5,13.2 12,14.5 12.5,15.5C13,16.5 13.5,17.5 14,18.5C14.5,19.5 15,20.5 16,21L17,20C16.2,19.5 15.8,18.7 15.3,17.8C14.8,16.9 14.3,16 13.8,15C13.3,14 12.8,12.8 12.5,11.8C13.5,12.2 14.5,12.5 15.5,12.5C16.5,12.5 17.5,12.2 18.5,11.8C19.5,11.4 20.5,11.8 21.5,12Z"/>
+            </svg>
+            <div class="logo">BOHEMIAN <span>20s</span></div>
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" data-en="Home" data-es="Inicio" data-fr="Accueil" data-de="Startseite" data-tr="Ana Sayfa">Home</a></li>
+                <li><a href="servicios.html" data-en="Trips & Guides" data-es="Viajes y Guías" data-fr="Voyages & Guides" data-de="Reisen & Guides" data-tr="Geziler & Rehberler">Trips & Guides</a></li>
+                <li><a href="historias.html" data-en="Stories & Blog" data-es="Historias y Blog" data-fr="Histoires & Blog" data-de="Geschichten & Blog" data-tr="Hikayeler & Blog">Stories & Blog</a></li>
+                <li><a href="galeria.html" data-en="Gallery" data-es="Galería" data-fr="Galerie" data-de="Galerie" data-tr="Galeri">Gallery</a></li>
+                <li><a href="hacks.html" data-en="Hacks" data-es="Trucos" data-fr="Astuces" data-de="Tricks" data-tr="İpuçları">Hacks</a></li>
+                <li><a href="contacto.html" class="active" data-en="Contact Us" data-es="Contacto" data-fr="Contactez-nous" data-de="Kontakt" data-tr="İletişim">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div style="display: flex; align-items: center; gap: 8px;">
+            <div class="nav-profile-container" id="navProfileWrapper" style="display: none;">
+                <button id="profileAvatarBtn" class="profile-avatar-btn">🌲<span id="notifDot" class="notification-dot"></span></button>
+            </div>
+            <button id="lang-btn" class="lang-toggle">EN / ES / FR / DE / TR</button>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <h1 data-en="Get in Touch & Our Story" data-es="Contacto y Nuestra Historia" data-fr="Contact & Notre Histoire" data-de="Kontakt & Unsere Geschichte" data-tr="İletişim ve Hikayemiz">Get in Touch & Our Story</h1>
+        <p data-en="Have questions, or want to understand why we built this safe haven for 20-somethings? Read our story below." data-es="¿Tienes preguntas o quieres saber por qué creamos este refugio?" data-fr="Des questions ou envie de comprendre pourquoi nous avons créé ce refuge ?" data-de="Hast du Fragen oder möchtest du wissen, warum wir diesen Zufluchtsort gebaut haben?" data-tr="Sorularınız mı var veya bu sığınağı neden kurduğumuzu öğrenmek mi istiyorsunuz?">Have questions, or want to understand why we built this safe haven for 20-somethings? Read our story below.</p>
+    </section>
+
+    <section class="container">
+        <!-- Founder's Story Card -->
+        <div class="founder-story-container">
+            <span class="badge" style="background-color: var(--pine-green); color:#fff; margin-bottom: 12px; display: inline-block;" data-en="ABOUT US & THE FOUNDER" data-es="ACERCA DE NOSOTROS Y EL FUNDADOR" data-fr="À PROPOS & LE FONDATEUR" data-de="ÜBER UNS & DER GRÜNDER" data-tr="HAKKIMIZDA VE KURUCU">ABOUT US & THE FOUNDER</span>
+            <h2 data-en="Hi there," data-es="Hola," data-fr="Bonjour," data-de="Hallo," data-tr="Merhaba,">Hi there,</h2>
+            <p data-en="My name is Kisrak. I’m the founder of BOHEMIAN 20s, and I started this community because I’m in my twenties, and I refuse to live a life scripted by someone else. I don't want to be trapped. I want to be free, and I want to genuinely live." data-es="Me llamo Kisrak. Soy el fundador de BOHEMIAN 20s, y comencé esta comunidad porque estoy en mis veintes y me niego a vivir una vida escrita por otros. No quiero estar atrapado. Quiero ser libre y vivir de verdad." data-fr="Je m'appelle Kisrak. Je suis le fondateur de BOHEMIAN 20s. J'ai créé cette communauté car j'ai 20 ans et je refuse de vivre une vie écrite par quelqu'un d'autre." data-de="Mein ich bin Kisrak. Ich bin der Gründer von BOHEMIAN 20s und habe diese Community gestartet, weil ich in meinen 20ern bin und mich weigere, ein von anderen vorgeschriebenes Leben zu führen." data-tr="Benim adım Kisrak. BOHEMIAN 20s'in kurucusuyum ve bu topluluğu başlattım çünkü 20'li yaşlardayım ve başkasının yazdığı bir hayatı yaşamayı reddediyorum. Kapana kısılmak istemiyorum. Özgür olmak ve gerçekten yaşamak istiyorum.">My name is Kisrak. I’m the founder of BOHEMIAN 20s, and I started this community because I’m in my twenties, and I refuse to live a life scripted by someone else. I don't want to be trapped. I want to be free, and I want to genuinely live.</p>
+            <p data-en="For the longest time, I found myself caught in the endless loop of working hard just to survive—only to realize that the harder I tried to get ahead in this world, the less alive I actually felt. My biggest dream is to be able to see the world before it gets destroyed, to experience new cultures, meet new people, and fill my days with art, curiosity, and real human connection instead of staring at screens." data-es="Durante mucho tiempo me encontré atrapado en el bucle eterno de trabajar duro solo para sobrevivir... mi mayor sueño es ver el mundo antes de que sea destruido, conocer nuevas culturas y rodearme de arte y curiosidad." data-fr="Pendant longtemps, je me suis retrouvé pris dans la boucle de travailler dur pour survivre. Mon plus grand rêve est de voir le monde avant qu'il ne soit détruit et de vivre de vraies connexions humaines." data-de="Lange Zeit steckte ich in dem endlosen Kreislauf fest, hart zu arbeiten, nur um zu überleben. Mein größter Traum ist es, die Welt zu sehen, bevor sie zerstört wird, und echte menschliche Verbindungen zu knüpfen." data-tr="Uzun süre kendimi sadece hayatta kalmak için çok çalışmanın sonsuz döngüsünde buldum. En büyük hayalim dünya yok olmadan önce onu görebilmek, yeni kültürler tanımak ve ekranlara bakmak yerine gerçek insan bağı kurabilmektir.">For the longest time, I found myself caught in the endless loop of working hard just to survive—only to realize that the harder I tried to get ahead in this world, the less alive I actually felt. My biggest dream is to be able to see the world before it gets destroyed, to experience new cultures, meet new people, and fill my days with art, curiosity, and real human connection instead of staring at screens.</p>
+            <p data-en="Let's be honest: some days are really difficult. We watch our generation influenced by beautiful video edits of trips with friends, wondering how we can ever live that out when we're buried in responsibilities. But I've learned that the moments I feel most alive and breathing are when I'm out on a trip, meeting people who are just like me—or completely different—and feeling that spark of shared adventure." data-es="Seamos honestos: algunos días son muy difíciles. Vimos a nuestra generación influenciada por videos de viajes preguntándonos cómo vivir eso con tantas responsabilidades. Pero aprendí que los momentos más vivos son en un viaje con gente." data-fr="Soyons honnêtes : certains jours sont très difficiles. Nous regardons notre génération influencée par de superbes vidéos de voyages. Mais j'ai appris que les moments où je me sens le plus vivant sont lors de voyages." data-de="Seien wir ehrlich: Manche Tage sind sehr schwer. Wir sehen unsere Generation durch schöne Reisevideos beeinflusst. Aber ich habe gelernt, dass ich mich am lebendigsten fühle, wenn ich auf Reisen bin." data-tr="Dürüst olalım: Bazı günler gerçekten zor. Kuşağımızın seyahat videolarından etkilendiğini izliyoruz. Ama en canlı hissettiğim anların bir seyahatte, insanlarla birlikte olduğum anlar olduğunu öğrendim.">Let's be honest: some days are really difficult. We watch our generation influenced by beautiful video edits of trips with friends, wondering how we can ever live that out when we're buried in responsibilities. But I've learned that the moments I feel most alive and breathing are when I'm out on a trip, meeting people who are just like me—or completely different—and feeling that spark of shared adventure.</p>
+            <p data-en="I want to have more positive days than negative days. If you're a dreamer who feels a little stuck and wants a crew to explore the wild with, you are in the right place. We just got to do it." data-es="Quiero tener más días positivos que negativos. Si eres un soñador que se siente estancado y quiere un grupo para explorar, estás en el lugar correcto. Solo tenemos que hacerlo." data-fr="Je veux avoir plus de jours positifs que négatifs. Si vous êtes un rêveur qui se sent un peu bloqué, vous êtes au bon endroit. Il faut juste le faire." data-de="Ich möchte mehr positive als negative Tage haben. Wenn du ein Träumer bist und eine Crew zum Erkunden suchst, bist du hier genau richtig. Wir müssen es einfach tun." data-tr="Olumsuz günlerden çok olumlu günlerim olsun istiyorum. Eğer biraz sıkışmış hissediyorsan ve keşfetmek için bir ekip istiyorsan, doğru yerdesin. Yapmalıyız!">I want to have more positive days than negative days. If you're a dreamer who feels a little stuck and wants a crew to explore the wild with, you are in the right place. We just got to do it.</p>
+            <div class="founder-signature">— Kisrak, Founder of Bohemian 20s 🌲</div>
+        </div>
+
+        <div class="contact-card">
+            <h2 style="color: var(--pine-green); margin-top: 0;" data-en="Send Us a Message" data-es="Envíanos un Mensaje" data-fr="Envoyez-nous un message" data-de="Sende uns eine Nachricht" data-tr="Bize Mesaj Gönder">Send Us a Message</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email Address" required>
+                <textarea placeholder="Tell us how we can help you or share your thoughts..." rows="5" required></textarea>
+                <button type="submit" class="btn primary-btn" data-en="Send Message" data-es="Enviar Mensaje" data-fr="Envoyer le message" data-de="Nachricht senden" data-tr="Mesaj Gönder">Send Message</button>
+            </form>
+            <div id="contactSuccessMessage" class="hidden-msg" data-en="Thank you! We'll reply within 24 hours." data-es="¡Gracias! Responderemos en 24 horas." data-fr="Merci ! Nous répondrons sous 24h." data-de="Danke! Wir antworten innerhalb von 24 Stunden." data-tr="Teşekkürler! 24 saat içinde yanıt vereceğiz.">Thank you! We'll reply within 24 hours.</div>
+        </div>
+    </section>
+
+    <!-- Floating UI Widgets & Modals -->
+    <button id="radioTabBtn" class="radio-tab-btn" data-en="📻 Bohemian Radio" data-es="📻 Radio Bohemian" data-fr="📻 Radio Bohemian" data-de="📻 Bohemian Radio" data-tr="📻 Bohemian Radyo">📻 Bohemian Radio</button>
+    <div id="radioDrawer" class="radio-drawer">
+        <div class="radio-header">
+            <h4 data-en="📻 Chill Campfire Radio" data-es="📻 Radio Fogata Chill" data-fr="📻 Radio Feu de Camp" data-de="📻 Lagerfeuer-Radio" data-tr="📻 Kamp Ateşi Radyosu">📻 Chill Campfire Radio</h4>
+            <button id="closeRadioBtn" class="radio-close-btn">&times;</button>
+        </div>
+        <p style="font-size: 0.8rem; color: #64748b; margin: 0 0 12px 0;" data-en="Ambient lofi & outdoor streams." data-es="Lofi ambiental y transmisiones al aire libre." data-fr="Lofi ambiant & flux en plein air." data-de="Ambient-Lofi & Outdoor-Streams." data-tr="Ortam lofi ve açık hava yayınları.">Ambient lofi & outdoor streams.</p>
+        <div class="radio-player-controls">
+            <audio id="bohemianAudio" loop><source src="https://stream.zeno.fm/f3wvbbqmdg8uv" type="audio/mpeg"></audio>
+            <button id="playRadioBtn" class="radio-play-btn" data-en="▶️ Play Chill Radio" data-es="▶️ Reproducir Radio Chill" data-fr="▶️ Écouter la radio" data-de="▶️ Radio abspielen" data-tr="▶️ Radyoyu Başlat">▶️ Play Chill Radio</button>
+        </div>
+    </div>
+    <button id="backToTopBtn" class="back-to-top-btn" title="Back to Top">↑</button>
+
+    <div id="profileDashboardModal" class="profile-dashboard-modal">
+        <div class="profile-dashboard-card">
+            <span class="close-modal" id="closeProfileModal">&times;</span>
+            <div class="profile-dashboard-header">
+                <div class="profile-large-avatar">🦅</div>
+                <div>
+                    <h3 id="profileUserEmailDisplay" style="margin: 0; color: var(--pine-green); font-size: 1.1rem;">wanderer@bohemian.com</h3>
+                    <span style="font-size: 0.8rem; color: var(--burnt-orange); font-weight: 700;" data-en="Verified Member" data-es="Miembro Verificado" data-fr="Membre vérifié" data-de="Verifiziertes Mitglied" data-tr="Onaylı Üye">Verified Member</span>
+                </div>
+            </div>
+            <div class="profile-stats-box">
+                <div><strong data-en="💬 Notifications:" data-es="💬 Notificaciones:" data-fr="💬 Notifications :" data-de="💬 Benachrichtigungen:" data-tr="💬 Bildirimler:">💬 Notifications:</strong> <span id="notifCountText" data-en="2 New replies from Host" data-es="2 Nuevas respuestas del Anfitrión" data-fr="2 Nouvelles réponses de l'hôte" data-de="2 Neue Antworten vom Host" data-tr="2 Yeni Host Yanıtı">2 New replies from Host</span></div>
+                <button type="button" id="clearNotifBtn" style="background: none; border: none; color: var(--burnt-orange); font-size: 0.8rem; font-weight: bold; cursor: pointer;" data-en="Mark Read" data-es="Marcar Leído" data-fr="Marquer lu" data-de="Als gelesen markieren" data-tr="Okundu İşaretle">Mark Read</button>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <a href="historias.html" class="profile-action-btn btn-write-blog" style="text-decoration: none;" data-en="✍️ Open Story & Blog Studio" data-es="✍️ Abrir Estudio de Historias" data-fr="✍️ Ouvrir le studio d'histoires" data-de="✍️ Geschichten-Studio öffnen" data-tr="✍️ Hikaye Stüdyosunu Aç">✍️ Open Story & Blog Studio</a>
+            </div>
+            <div class="profile-actions-list">
+                <button type="button" id="signOutBtn" class="profile-action-btn btn-sign-out" data-en="Sign Out of Account" data-es="Cerrar Sesión" data-fr="Se déconnecter" data-de="Abmelden" data-tr="Oturumu Kapat">Sign Out of Account</button>
+                <button type="button" id="deleteAccountBtn" class="profile-action-btn btn-delete-account" data-en="⚠️ Delete My Account & Data" data-es="⚠️ Eliminar mi Cuenta" data-fr="⚠️ Supprimer mon compte" data-de="⚠️ Konto löschen" data-tr="⚠️ Hesabımı Sil">⚠️ Delete My Account & Data</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="memberGateModal" class="member-gate-modal">
+        <video autoplay muted loop class="gate-video-bg"><source src="https://assets.mixkit.co/videos/preview/mixkit-friends-running-on-the-beach-at-sunset-42691-large.mp4" type="video/mp4"></video>
+        <div class="gate-content-card">
+            <span class="badge" data-en="Members Only Safe Haven" data-es="Refugio Exclusivo para Miembros" data-fr="Refuge réservé aux membres" data-de="Zufluchtsort nur für Mitglieder" data-tr="Sadece Üyelere Özel Sığınak">Members Only Safe Haven</span>
+            <h2 id="gateTitle" data-en="Welcome Back, Wanderer" data-es="Bienvenido de Nuevo, Viajero" data-fr="Bienvenue, Voyageur" data-de="Willkommen zurück, Wanderer" data-tr="Hoş Geldin, Gezgin">Welcome Back, Wanderer</h2>
+            <p id="gateSubtitle" data-en="Sign in to access your community feeds and saved hacks." data-es="Inicia sesión para acceder a tus contenidos y hacks guardados." data-fr="Connectez-vous pour accéder à vos flux." data-de="Melde dich an, um auf deine Feeds zuzugreifen." data-tr="Akışınıza ve kaydedilmiş ipuçlarınıza erişmek için giriş yapın.">Sign in to access your community feeds and saved hacks.</p>
+            <form id="memberAuthForm"></form>
+            <button type="button" id="toggleAuthModeBtn" class="auth-toggle-btn" data-en="Not a member? Sign up for an account" data-es="¿No eres miembro? Regístrate" data-fr="Pas de compte ? Inscrivez-vous" data-de="Kein Mitglied? Registrieren" data-tr="Üye değil misin? Kaydol">Not a member? Sign up for an account</button>
+        </div>
+    </div>
+
+    <footer><p data-en="&copy; 2026 BOHEMIAN Community. Made with freedom in Spain." data-es="&copy; 2026 Comunidad BOHEMIAN. Hecho con libertad en España." data-fr="&copy; 2026 Communauté BOHEMIAN. Fait avec liberté en Espagne." data-de="&copy; 2026 BOHEMIAN Community. Mit Freiheit in Spanien gemacht." data-tr="&copy; 2026 BOHEMIAN Topluluğu. İspanya'da özgürlükle üretildi.">&copy; 2026 BOHEMIAN Community. Made with freedom in Spain.</p></footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
